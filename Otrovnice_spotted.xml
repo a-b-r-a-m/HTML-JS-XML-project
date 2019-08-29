@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding="ISO-8859-2" ?>
+<otrovnice>
+	<otrovnica>
+		<vrsta>poskok</vrsta>
+		<lokacija>Babnjaca</lokacija>
+		<vrijeme>11.06.2015.</vrijeme>
+		<prijavio>baksuz356</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>poskok</vrsta>
+		<lokacija>Omiska Dinara</lokacija>
+		<vrijeme>22.05.2015.</vrijeme>
+		<prijavio>Velimir Jozic</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>planinski zutokrug</vrsta>
+		<lokacija>Juzni Velebit</lokacija>
+		<vrijeme>22.04.2015.</vrijeme>
+		<prijavio>nepoznato</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>ridovka</vrsta>
+		<lokacija>Porec, Obala marsala Tita 4</lokacija>
+		<vrijeme>25.03.2015.</vrijeme>
+		<prijavio>gorongoro</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>poskok</vrsta>
+		<lokacija>podnozje Biokova</lokacija>
+		<vrijeme>20.10.2014.</vrijeme>
+		<prijavio>nepoznato</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>crnokrpica</vrsta>
+		<lokacija>Postira, Brac</lokacija>
+		<vrijeme>23.09.2014., oko 17h</vrijeme>
+		<prijavio>ribar Sime</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>zmajur</vrsta>
+		<lokacija>okolica Skradina</lokacija>
+		<vrijeme>20.08.2014., popodne</vrijeme>
+		<prijavio>nepoznato</prijavio>
+	</otrovnica>
+	<otrovnica>
+		<vrsta>ridovka</vrsta>
+		<lokacija>Rijeka, kod Katedrale Svetog Vida</lokacija>
+		<vrijeme>06.06.2014., prije mise</vrijeme>
+		<prijavio>poboznirijecanin86</prijavio>
+	</otrovnica>
+</otrovnice>

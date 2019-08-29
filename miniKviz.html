@@ -1,0 +1,75 @@
+﻿<html>
+<head>
+<meta charset = "utf-8">
+<title>KVIZ</title>
+</head>
+<body bgcolor="#BBBB33" link="brown">
+
+<script type = "text/javascript">
+var odg, tocniOdg=0;
+
+odg=prompt("Kolika je otprilike maksimalna duljina poskoka? (u cm)");
+	if (odg == "100")
+	{
+		alert("Točno.");
+		tocniOdg++;
+	}
+	else
+	{
+		alert("Netočno. Točan odgovor je 100 cm.");
+	}
+
+odg=prompt("Tko je veći kod riđovke, mužjak ili ženka?");
+	if (odg == "ženka" || odg == "zenka")
+	{
+		alert("Točno.");
+		tocniOdg+=1;
+	}
+	else
+	{
+		alert("Netočno. Točan odgovor je ženka.");
+	}
+
+odg=prompt("Koja je najmanja europska ljutica, ujedno i najslabijeg otrova među njima?");
+	if (odg == "planinski žutokrug" || odg == "Vipera ursinii macrops")
+	{
+		alert("Tocno. Uglavnom su <50cm, a rijetko >60cm.");
+		tocniOdg++;
+	}
+	else
+	{
+		alert("Netočno. Odgovor je planinski žutokrug. Uglavnom su <50cm, a rijetko >60cm.");
+	}
+
+odg=prompt("Koja hrvatska otrovnica prilikom vrebanja na otvorenom oprezno prilazi iza zaklona, te se vjerojatno zato na engleskom zove 'cat snake'?");
+	if (odg == "crnokrpica" || odg == "Telescopus fallax fallax")
+	{
+		alert("Točno.");
+		tocniOdg++;
+	}
+	else
+	{
+		alert("Netočno. Odgovor je crnokrpica.");
+	}
+
+odg=prompt("Koja je najbrža zmije Europe?");
+	if (odg == "zmajur" || odg == "Malpolon monspessulanus")
+	{
+		alert("Točno. Zmajur je također jedina poznata 'zmija kavalir', mužjak se udvara tako da ženki ponudi miša.");
+		tocniOdg++;
+	}
+	else
+	{
+		alert("Netočno. Odgovor je zmajur. Zmajur je također jedina poznata 'zmija kavalir', mužjak se udvara tako da ženki ponudi miša.");
+	}
+
+
+
+alert("Broj točnih odgovora: " + tocniOdg + "/5");
+
+</script>
+
+<a href="Otrovnice_u_RH.html">Početna</a>
+
+</body>
+</html>

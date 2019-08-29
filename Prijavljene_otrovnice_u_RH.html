@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prijavljene otrovnice u RH</title>
+<meta charset ="utf-8">
+</head>
+
+<body bgcolor="#BBBB33">
+
+
+<script type="text/javascript">
+if (window.XMLHttpRequest)
+  {
+	xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+xmlhttp.open("GET","Otrovnice_spotted.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+
+
+document.write("<table border='1'>");
+document.write("<tr><td>VRSTA</td><td>LOKACIJA</td><td>VRIJEME</td><td>PRIJAVIO</td></tr>");
+var x=xmlDoc.getElementsByTagName("otrovnica");
+
+for (i=0;i<x.length;i++)
+{
+document.write("<tr>");
+document.write("<td>");
+
+document.write(x[i].getElementsByTagName("vrsta")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+
+document.write(x[i].getElementsByTagName("lokacija")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+
+document.write(x[i].getElementsByTagName("vrijeme")[0].childNodes[0].nodeValue);
+document.write("</td><td>");
+
+document.write(x[i].getElementsByTagName("prijavio")[0].childNodes[0].nodeValue);
+document.write("</td>");
+}
+document.write("</table>");
+
+</script>
+<br/><pre>				<a href="Prijava_uocene_otrovnice.html" target="_blank">Prijavi ako si negdje zamijetio otrovnicu!</a></pre><br/>
+
+<br/><pre>				<a href="Otrovnice_u_RH.html" target="_blank">Pocetna</a></pre><br/>
+
+</body>
+</html>

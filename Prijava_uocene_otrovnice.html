@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prijava uoèene otrovnice</title>
+
+<script type="text/javascript"> 
+     
+function checkIt()
+{
+	var maska = /^[a-zA-Z][_a-zA-Z]+@([a-zA-Z]+\.)+[a-zA-Z]{2,3}$/;
+	var b1, b2;
+
+	if(document.getElementById('MAIL').value.match(maska))
+		{b1=true;}
+	else
+		{
+			alert("Neispravan format e-maila!");
+			b1=false;
+		}
+
+
+
+
+	var mask = /^[a-z]{3}[0-9]+[A-Z]+$/;
+
+	if(document.getElementById('captcha').value.match(mask))
+		{b2=true;}
+	else
+		{
+			alert("Neispravna provjera!");
+			b2=false;
+		}
+
+	if(b1&&b2 === true)
+		return true;
+	else 
+		return false; 
+	
+}
+</script>
+</head>
+
+<body bgcolor="#BBBB33" link="brown">
+
+<h1><small>Prijava uoèene otrovnice</small></h1>
+<form onSubmit="return checkIt();">
+<table border="1" align="left" cellpadding="3" cellspacing="3" width = "600" bgcolor="#008800">
+
+<tr>
+	<td>
+		<b>Lokacija:</b>
+	</td>
+	<td>
+		<input type="text" name="lokacija" required="required" placeholder="što preciznije to bolje" autofocus>
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<b>Vrijeme:</b>
+	</td>
+	<td>
+		<input type="text" name = "vrime" placeholder="što preciznije to bolje">
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<b>Vrsta:</b>
+	</td>
+	<td>
+		<select>
+			<optgroup label="otrovna za èovjeka">
+				<option>poskok</option>
+				<option>riðovka</option>
+				<option>planinski žutokrug</option>
+			</optgroup>
+			<optgroup label="neotrovna za èovjeka">
+				<option>crnokrpica</option>
+				<option>zmajur</option>
+		</select>
+	</td>
+</tr>
+
+<tr>
+	<td> 
+		<b>Prijavljuje:</b>
+	</td>
+	<td>
+		<input type="text" name="ime">
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<b>Kontakt e-mail:</b>
+	</td>
+	<td>
+		<input type="text" name="mail" id="MAIL" placeholder="npr. korisnik@mail.hr" required>
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<b>Jesi li èovjek? Unesi tri mala slova, pa pozitivan cijeli broj i završi s velikim slovima:
+	</td>
+	<td>
+		<input type="text" name="provjera" id="captcha" placeholder="npr. abc567K" required="required">
+	</td>
+</tr>
+
+<tr>
+	<td>
+		<b>Dodatno:</b>
+	</td>
+	<td>
+		<textarea cols="30" rows="8" placeholder="nešto za dodati?"></textarea>
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center">
+		<input type="submit" value="Pošalji"><input type="reset" value="Poništi">
+	</td>
+</tr>
+
+</table>
+</form>
+
+<pre>				<a href="Prijavljene_otrovnice_u_RH.html" target="_blank">Otrovnice spotted!</a></pre>
+<br/><pre>				<a href="Otrovnice_u_RH.html" target="_blank">Pocetna stranica</a></pre><br/>
+<br/>
+
+</body>
+</html>
